@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import MainContent from './components/MainContent';
 
 function App() {
   
@@ -14,8 +15,8 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-  
-  
+
+
   return (
     <div className="App">
       <Header
@@ -24,7 +25,11 @@ function App() {
         currentCategory={currentCategory} 
       />
       <main>
-        <p>Content will go here!</p>
+        <MainContent 
+          categories={categories}
+          setCurrentCategory={setCurrentCategory}
+          currentCategory={currentCategory}
+        />
       </main>
       <Footer />
     </div>
