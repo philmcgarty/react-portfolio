@@ -1,7 +1,7 @@
 import React from "react";
-
+// returns project tiles to portfolio
 const Project = () => {
-
+    // project array used to create tiles
     const projects= [
         {
             name: 'Home Garden Manager',
@@ -38,24 +38,19 @@ const Project = () => {
     return(
         <>
             <ul className="row mt-3">
+                {/* loops through project array to render tiles */}
                 {projects.map((project, i) => 
+                // sets background image
                 <li className="projects col-sm-12 col-md-6 col-lg-4" key={i} style={{backgroundImage: "url("+require(`../assets/images/${i}.png`)}}>
                     <h3>
+                        {/* link to deployed project */}
                         <a href={project.deployed} target="_blank" className="project-link align-middle">{project.name}</a>
                         <br/> 
+                        {/* link to repo */}
                         <a href={project.repo} target="_blank">
                             <i className="fa fa-github project-icon"></i>
                         </a>
                     </h3>
-                    {/* <img 
-                        src={require(`../assets/images/${i}.png`)}
-                        alt={project.name}
-                        className="project-image"
-                        key={project.name}
-                    /> */}
-                    
-                    {/* <br/>
-                    <a href={project.repo} target="_blank">{project.name} GitHub Repo</a> */}
                 </li>)}
             </ul>
         </>

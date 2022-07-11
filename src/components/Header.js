@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
-
+// header section
 function Header(props) {
     
     const {
@@ -12,6 +12,7 @@ function Header(props) {
     return (
         <header className="hero">
             <h1>Phil McGarty</h1>
+            {/* return nav links */}
             <Navigation
                 categories={categories}
                 setCurrentCategory={setCurrentCategory}

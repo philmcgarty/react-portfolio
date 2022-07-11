@@ -3,7 +3,7 @@ import AboutMe from './AboutMe'
 import Portfolio from './Portfolio';
 import Resume from './Resume';
 import Contact from './Contact';
-
+// main body of page - returns selected element
 function MainContent (props) {
     const {
         categories = [],
@@ -14,7 +14,7 @@ function MainContent (props) {
     } = props
     
     console.log(currentCategory)
-
+    // conditional to return correct element/page based on navbar click
     let mainSection = function(){
         if (currentCategory.name === 'Portfolio') {
             return <Portfolio />
@@ -27,7 +27,6 @@ function MainContent (props) {
         }
     }
     
-
     return (
         <div>
             {/* <p>Your current page is {currentCategory.name}</p> */}

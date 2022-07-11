@@ -11,11 +11,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* remove style from lists */
 ul {
   list-style: none;
 }
-
+/* background image for header */
 .hero {
   background-image: url("../src/assets/images/hero-background2.jpg");
   background-size: cover;
@@ -33,7 +33,7 @@ h1 {
   font-size: 35px;
   margin-top: 20px;
 }
-
+/* nav links list in header */
 header ul {
   display: flex;
   flex-wrap: wrap;
@@ -42,7 +42,7 @@ header ul {
   margin-right: 50px;
   text-align: center;   
 }
-
+/* nav links in header */
 .nav-links {    
   padding: 0 6px 5px 6px;
   font-size: 24px;
@@ -51,13 +51,13 @@ header ul {
   color: white;
   text-shadow: 1px 1px black; 
 }
-
+/* hover on nav bar items */
 .nav-links:hover {
   color: black;
   text-shadow: none;
   cursor: pointer;
 }
-
+/* indicates active page by highlighting option on nav bar */
 .nav-active {
   color: lightseagreen;
 }
@@ -65,21 +65,21 @@ header ul {
 .selected {
   color:rgb(14, 46, 77)
 }
-
+/* icons for GitHub etc */
 i {
   align-items: center;
   padding: 40px;
   color: white;
 }
-
+/* hover on icons */
 i:hover {
   color: lightseagreen;
 }
-
+/* set fontsize for icons */
 .fa {
   font-size: 40px;
 }
-
+/* footer */
 footer {
   background-color: black;
   width: 100%;
@@ -87,13 +87,13 @@ footer {
   bottom: 0px;
   left: 0px
 }
-
+/* text on about me page */
 .about-me-text {
   margin-left: 50px;
   margin-right: 50px;
   text-align: left;
 }
-
+/* avatar style picture on about me page */
 .avatar-image {
   width: 40%;
   height: 40%;
@@ -107,7 +107,7 @@ h2 {
 h3 {
   font-size: 22px;
 }
-
+/* list of proficiencies on resume page */
 .skill-list {
   font-size: 18px;
 }
@@ -115,11 +115,11 @@ h3 {
 .skill-list li {
   margin-left: -10px;
 }
-
+/* form label on contact page*/
 label {
   font-weight: 500;
 }
-
+/* contact form */
 form {
   font-size: 18px;
 }
@@ -136,7 +136,7 @@ form {
   height: 100px;
   font-size: 18px;
 }
-
+/* project page */
 .projects {
   padding-bottom: 20px;
 }
@@ -147,12 +147,12 @@ form {
   text-align: center;
   background-size: cover;
 }
-
+/* link to deployed project */
 .project-link {
   color: white;
   background-color: black;
 }
-
+/* github icon on project tile */
 .project-icon {
   color: lightgreen;
 }

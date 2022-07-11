@@ -3,11 +3,12 @@
 import React, { useState } from "react";
 import { validateEmail } from '../utils/helpers';
 
+// contact form
 function ContactForm(){
     const [formState, setFormState] = useState({name: '', email: '', message: ''});
     const { name, email, message} = formState;
     const [errorMessage, setErrorMessage] = useState('');
-
+    // error handling for form
     function handleChange(e) {
         if(e.target.name === 'email'){
             const isValid = validateEmail(e.target.value);
@@ -28,9 +29,9 @@ function ContactForm(){
         }
     }
 
-    console.log(formState)
+    //console.log(formState)
 
-    
+    // submit button handler
     function handleSubmit(e){
         e.preventDefault();
         console.log(formState);
@@ -40,17 +41,20 @@ function ContactForm(){
         <section>
             <h2>Contact me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
+                {/* name input */}
                 <div>
                     <label htmlFor="name">Name:</label>
                     <br/>
                     <input type="text" defaultValue={name} onBlur={handleChange} name="name" className="input-box" />
                 </div>
                 <div>
+                    {/* email input */}
                     <label htmlFor="email">Email address:</label>
                     <br/>
                     <input type="email" defaultValue={email} name="email" onBlur={handleChange} className="input-box" />
                 </div>
                 <div>
+                    {/* message input */}
                     <label htmlFor="message">Message:</label>
                     <br/>
                     <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" className="input-area" />
@@ -60,6 +64,7 @@ function ContactForm(){
                         <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
+                {/* submit button */}
                 <button data-testid="button" type="submit">Submit</button>
             </form>
         </section>

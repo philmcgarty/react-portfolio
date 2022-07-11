@@ -1,6 +1,6 @@
 import React from "react";
 import Avatar from '../assets/images/AvatarMaker.svg';
-
+// About Me section
 function AboutMe () {
     return (
         <>

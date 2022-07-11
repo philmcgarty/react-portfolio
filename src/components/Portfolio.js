@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-
+// portfolio page - mostly generated from Project component
 function Portfolio () {
     return (
         <>
