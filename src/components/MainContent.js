@@ -8,7 +8,9 @@ function MainContent (props) {
     const {
         categories = [],
         setCurrentCategory,
-        currentCategory
+        currentCategory,
+        contactSelected,
+        setContactSelected
     } = props
     
     console.log(currentCategory)

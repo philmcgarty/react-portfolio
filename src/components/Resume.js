@@ -12,7 +12,7 @@ function Resume () {
             <h2>Resume</h2>
             <p>Download a copy of my resume <button type="submit" onClick={buttonClick}>Download Resume</button></p>
             <h3>Front-end Proficiencies</h3>
-            <ul>
+            <ul className="skill-list">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>JavaScript</li>
@@ -22,7 +22,7 @@ function Resume () {
                 <li>Handlebars</li>
             </ul>
             <h3>Back-end Proficiencies</h3>
-            <ul>
+            <ul className="skill-list">
                 <li>Node.js</li>
                 <li>Express</li>
                 <li>mySQL</li>

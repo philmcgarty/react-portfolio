@@ -10,7 +10,7 @@ function Header(props) {
     } = props;
     
     return (
-        <header>
+        <header className="hero">
             <h1>Phil McGarty</h1>
             <Navigation
                 categories={categories}

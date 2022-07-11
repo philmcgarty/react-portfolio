@@ -11,3 +11,148 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+ul {
+  list-style: none;
+}
+
+.hero {
+  background-image: url("../src/assets/images/hero-background2.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%; 
+}
+
+h1 {
+  padding-left: 20px;
+  color: white;
+  text-shadow: 1px 1px black;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+header ul {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; 
+  justify-content: space-between;   
+  margin-right: 50px;
+  text-align: center;   
+}
+
+.nav-links {    
+  padding: 0 6px 5px 6px;
+  font-size: 24px;
+  font-weight: bold;    
+  margin: 5px 5px; 
+  color: white;
+  text-shadow: 1px 1px black; 
+}
+
+.nav-links:hover {
+  color: black;
+  text-shadow: none;
+  cursor: pointer;
+}
+
+.nav-active {
+  color: lightseagreen;
+}
+
+.selected {
+  color:rgb(14, 46, 77)
+}
+
+i {
+  align-items: center;
+  padding: 40px;
+  color: white;
+}
+
+i:hover {
+  color: lightseagreen;
+}
+
+.fa {
+  font-size: 40px;
+}
+
+footer {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px
+}
+
+.about-me-text {
+  margin-left: 50px;
+  margin-right: 50px;
+  text-align: left;
+}
+
+.avatar-image {
+  width: 40%;
+  height: 40%;
+}
+
+h2 {
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.skill-list {
+  font-size: 18px;
+}
+
+.skill-list li {
+  margin-left: -10px;
+}
+
+label {
+  font-weight: 500;
+}
+
+form {
+  font-size: 18px;
+}
+
+/* contact form textbox */
+.input-box {
+  width: 40%;
+  font-size: 18px;
+}
+
+/* contact form text area */
+.input-area {
+  width: 40%;
+  height: 100px;
+  font-size: 18px;
+}
+
+.projects {
+  padding-bottom: 20px;
+}
+
+.project-image {
+  height: 100px;
+  display: block;
+  text-align: center;
+  background-size: cover;
+}
+
+.project-link {
+  color: white;
+  background-color: black;
+}
+
+.project-icon {
+  color: lightgreen;
+}

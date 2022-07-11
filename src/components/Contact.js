@@ -12,13 +12,13 @@ function ContactForm(){
         if(e.target.name === 'email'){
             const isValid = validateEmail(e.target.value);
             if (!isValid){
-                setErrorMessage('Your email is invalid.');
+                setErrorMessage('Your email is invalid');
             } else {
                 setErrorMessage('');
             }
         } else {
             if (!e.target.value.length){
-                setErrorMessage(`${e.target.name} is required.`);
+                setErrorMessage(`${e.target.name} is required`);
             } else {
                 setErrorMessage('');
             }
@@ -38,21 +38,23 @@ function ContactForm(){
 
     return(
         <section>
-            <h1 data-testid="h1tag">Contact me</h1>
+            <h2>Contact me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Name:</label>
-                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" />
+                    <br/>
+                    <input type="text" defaultValue={name} onBlur={handleChange} name="name" className="input-box" />
                 </div>
                 <div>
                     <label htmlFor="email">Email address:</label>
-                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} />
+                    <br/>
+                    <input type="email" defaultValue={email} name="email" onBlur={handleChange} className="input-box" />
                 </div>
                 <div>
                     <label htmlFor="message">Message:</label>
-                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" />
+                    <br/>
+                    <textarea name="message" defaultValue={message} onBlur={handleChange} rows="5" className="input-area" />
                 </div>
-                {/* below is conditional statement, same as - if(errorMessage){} */}
                 {errorMessage && (
                     <div>
                         <p className="error-text">{errorMessage}</p>

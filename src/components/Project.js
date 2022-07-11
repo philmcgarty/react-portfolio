@@ -37,13 +37,25 @@ const Project = () => {
 
     return(
         <>
-            <ul>
+            <ul className="row mt-3">
                 {projects.map((project, i) => 
-                <li key={i}>
-                    <h3>{project.name}</h3>
-                    <a href={project.deployed} target="_blank">{project.name} Deployed</a>
-                    <br/>
-                    <a href={project.repo} target="_blank">{project.name} GitHub Repo</a>
+                <li className="projects col-sm-12 col-md-6 col-lg-4" key={i} style={{backgroundImage: "url("+require(`../assets/images/${i}.png`)}}>
+                    <h3>
+                        <a href={project.deployed} target="_blank" className="project-link align-middle">{project.name}</a>
+                        <br/> 
+                        <a href={project.repo} target="_blank">
+                            <i className="fa fa-github project-icon"></i>
+                        </a>
+                    </h3>
+                    {/* <img 
+                        src={require(`../assets/images/${i}.png`)}
+                        alt={project.name}
+                        className="project-image"
+                        key={project.name}
+                    /> */}
+                    
+                    {/* <br/>
+                    <a href={project.repo} target="_blank">{project.name} GitHub Repo</a> */}
                 </li>)}
             </ul>
         </>

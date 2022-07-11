@@ -1,30 +1,33 @@
 import React, { useEffect } from "react";
 
-function Navigation(props){
+function Navigation(props) {
     const {
         categories = [],
         setCurrentCategory,
-        currentCategory
+        currentCategory,
+        contactSelected,
+        setContactSelected
     } = props
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         document.title = currentCategory.name;
     }, [currentCategory]);
 
     return (
         <ul>
-            {categories.map((category)=> (
+            {categories.map((category) => (
                 <li
-                    className={currentCategory.name }
+                    className={`nav-links ${currentCategory.name === category.name && !contactSelected && 'nav-active'
+                        }`}
                     key={category.name}
                 >
                     <span
-                        onClick={()=>{
+                        onClick={() => {
                             setCurrentCategory(category)
                         }}
                     >
                         {category.name}
-                        
+
                     </span>
                 </li>
             ))}

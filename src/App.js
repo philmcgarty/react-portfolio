@@ -15,20 +15,24 @@ function App() {
   ]);
 
   const [currentCategory, setCurrentCategory] = useState(categories[0]);
-
+  const [contactSelected, setContactSelected] = useState(false);
 
   return (
     <div className="App">
       <Header
         categories={categories}
         setCurrentCategory={setCurrentCategory}
-        currentCategory={currentCategory} 
+        currentCategory={currentCategory}
+        contactSelected={contactSelected}
+        setContactSelected={setContactSelected} 
       />
       <main>
         <MainContent 
           categories={categories}
           setCurrentCategory={setCurrentCategory}
           currentCategory={currentCategory}
+          contactSelected={contactSelected}
+          setContactSelected={setContactSelected}
         />
       </main>
       <Footer />
