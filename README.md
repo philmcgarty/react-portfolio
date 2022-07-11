@@ -1,70 +1,67 @@
-# Getting Started with Create React App
+# React Portfolio
+Week 20 Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+This is a one page website portfolio to showcase my work to potential employers. The basis of the content came from the previous portfolio (Week 2 challenge).
 
-### `npm start`
+This website was built from scratch, using React.js, HTML, CSS, Bootstrap, and JavaScript.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Tests](#tests)
+* [Links](#links)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+## Installation
 
-### `npm run build`
+**To install packages if running locally**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Type the following at the root directory in a bash prompt to install dependencies: 
+*"npm i"*
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+**To start the server if running locally**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Type *"npm start"* to start the React server. The page should then open, or navigate to: http://localhost:3000/
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The user is presented with a portfolio single page application (SPA). There are 4 pages that render in the main section of the site - About Me, Portfolio, Contact, Resume. When the user clicks a link on the navbar, the page will open and the link is highlighted to indicate that page is active. The portfolio page contains 6 tiles relating to projects - each title has a link to the deployed app and the GitHub repo.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+There is a contact form, but it is not yet connected to the backend, so the information is not transmitted. This is the same for the download resume button - it just prints a message to the console.
 
-## Learn More
+Future Development: There is a lot of room for improvement with the CSS, and as noted above a backend could be connected to add extra functionality.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
+## Tests
 
-### Code Splitting
+About Me Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Portfolio About Me Page](./src/assets/readme-images/about-me.png)
 
-### Analyzing the Bundle Size
+Contact Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+![Contact Page](./src/assets/readme-images/contact.png)
 
-### Making a Progressive Web App
+Portfolio Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Portfolio Project Tiles](./src/assets/readme-images/portfolio.png)
 
-### Advanced Configuration
+Resume Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Resume Page](./src/assets/readme-images/resume.png)
 
-### Deployment
+---
+## Links
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+[GitHub Repo](https://github.com/philmcgarty/react-portfolio)
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Deployed Portfolio](https://philmcgarty.github.io/react-portfolio/)
