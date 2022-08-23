@@ -13,9 +13,9 @@ function Footer(){
                 <i className='fa fa-linkedin'></i>
             </a>
             {/* Twitter Link */}
-            <a href="https://twitter.com/philmcgarty" target="_blank">
+            {/* <a href="https://twitter.com/philmcgarty" target="_blank">
                 <i className="fa fa-twitter"></i>
-            </a>
+            </a> */}
         </footer>
     )
 }
