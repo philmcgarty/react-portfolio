@@ -4,14 +4,19 @@ const Project = () => {
     // project array used to create tiles
     const projects= [
         {
-            name: 'Home Garden Manager',
-            deployed: "https://warm-harbor-34559.herokuapp.com/",
-            repo: "https://github.com/SierraDavis2000/Home-Garden-Manager"
+            name: 'SquabbleHub',
+            deployed: "https://mighty-meadow-52025.herokuapp.com/",
+            repo: "https://github.com/philmcgarty/squabblehub"
         },
         {
-            name: 'BBQ Boss',
-            deployed: "https://philmcgarty.github.io/bbq/",
-            repo: "https://github.com/philmcgarty/bbq"
+            name: 'Home Garden Manager',
+            deployed: "https://warm-harbor-34559.herokuapp.com/",
+            repo: "https://github.com/philmcgarty/Home-Garden-Manager"
+        },
+        {
+            name: 'Quizify',
+            deployed: "https://philmcgarty.github.io/quizify/",
+            repo: "https://github.com/philmcgarty/quizify"
         },
         {
             name: 'Weather Dashboard',
@@ -19,20 +24,16 @@ const Project = () => {
             repo: "https://github.com/philmcgarty/weather"
         },
         {
-            name: 'Horiseon',
-            deployed: "https://philmcgarty.github.io/horiseon/",
-            repo: "https://github.com/philmcgarty/horiseon"
+            name: 'Tech Blog',
+            deployed: "https://murmuring-island-53348.herokuapp.com/",
+            repo: "https://github.com/philmcgarty/tech-blog"
         },
+        
         {
-            name: 'Robot Gladiators',
-            deployed: "https://philmcgarty.github.io/robot-gladiators/",
-            repo: "https://github.com/philmcgarty/robot-gladiators"
-        },
-        {
-            name: 'Run Buddy',
-            deployed: "",
-            repo: "https://github.com/philmcgarty/run-buddy"
-        },
+            name: 'BBQ Boss',
+            deployed: "https://philmcgarty.github.io/bbq/",
+            repo: "https://github.com/philmcgarty/bbq"
+        }
     ]
 
     return(

@@ -87,11 +87,16 @@ footer {
   bottom: 0px;
   left: 0px
 }
+/* footer icons */
+.footer-icons{
+  padding: 10px 40px;
+}
 /* text on about me page */
 .about-me-text {
   margin-left: 50px;
   margin-right: 50px;
   text-align: left;
+  margin-bottom: 10rem;
 }
 /* avatar style picture on about me page */
 .avatar-image {
@@ -114,6 +119,10 @@ h3 {
 
 .skill-list li {
   margin-left: -10px;
+}
+
+.download-btn {
+  margin-bottom: 10rem;
 }
 /* form label on contact page*/
 label {
@@ -139,6 +148,11 @@ form {
 /* project page */
 .projects {
   padding-bottom: 20px;
+  border: 2px solid white;
+}
+
+.projects:hover {
+
 }
 
 .project-image {

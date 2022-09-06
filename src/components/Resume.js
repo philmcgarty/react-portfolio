@@ -42,10 +42,13 @@ function Resume() {
             </div>
 
             {/* resume download button - for future use */}
-            <a href={resume} download="Phil McGarty_Web Developer_Resume">
-                <button type="button">Download Resume</button>
-            </a>
-            
+            <div className="download-btn">
+                <a href={resume} download="Phil McGarty_Web Developer_Resume">
+                    <button type="button">Download Resume</button>
+                </a>
+            </div>
+
+
 
         </>
     )
